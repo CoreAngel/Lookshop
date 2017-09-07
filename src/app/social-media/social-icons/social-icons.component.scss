@@ -1,0 +1,45 @@
+.icons {
+  color: #6b6b6b;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &__title {
+    font-size: 1.2rem;
+    margin-right: 12px;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 10px;
+    transition: 200ms;
+
+    &:nth-child(odd):hover {
+      background-color: darken(#f7f7f7, 10);
+    }
+    &:nth-child(even) {
+      background-color: #f7f7f7;
+
+      &:hover {
+        background-color: darken(#f7f7f7, 10);
+      }
+
+    }
+
+  }
+
+  &__icon {
+    color: #6b6b6b;
+    font-size: 2rem;
+  }
+
+  &__label {
+    position: absolute;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+  }
+
+}

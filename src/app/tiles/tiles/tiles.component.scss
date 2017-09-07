@@ -1,0 +1,35 @@
+.tiles {
+  margin: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    max-width: 970px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 169px 169px;
+    grid-gap: 2px 2px;
+    grid-template-areas:
+      "first first second second"
+      "first first third fourth";
+  }
+
+  &__first {
+    grid-area: first;
+  }
+
+  &__second {
+    grid-area: second;
+  }
+
+  &__third {
+    grid-area: third;
+  }
+
+  &__fourth {
+    grid-area: fourth;
+  }
+
+}
+

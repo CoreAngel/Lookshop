@@ -1,0 +1,141 @@
+.slide {
+  height: 440px;
+  width: 100%;
+  background: linear-gradient(to right, #f6f3ec 0%,#f6f3ec 50%,#ece5db 51%,#ece5db 100%);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    max-width: 970px;
+    background: url("/assets/LayerSlider1.png") no-repeat right center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__message {
+    display: inline-block;
+    text-align: center;
+    margin-left: 70px;
+  }
+
+  &__line {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__first-text {
+    font-family: "Luxury Royale JF";
+    font-size: 3.6rem;
+    color: #78645d;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 500px;
+      background-color: #78645d;
+      top: 50%;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: 5px;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: 5px;
+    }
+
+  }
+
+  &__secound-text {
+    font-size: 9.6rem;
+    font-family: "Helvetica Neue LT Std - HvCn";
+    color: transparent;
+    text-transform: uppercase;
+    line-height: 0.75;
+    text-align: center;
+    background-image: linear-gradient(160deg, #a25b76 0%,#c6a8ae 12%,#cda9a6 31%,#f4ad92 50%,#f2b28e 68%,#fcc18b 85%,#e2b69a 100%);;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    position: relative;
+
+    &:after, &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: #78645d;
+      left: 0;
+    }
+
+    &:before {
+      top: 100%;
+      margin-top: 6px;
+      height: 4px;
+    }
+
+    &:after {
+      top: 100%;
+      margin-top: 15px;
+      height: 1px;
+    }
+
+  }
+
+  &__third-text {
+    font-size: 3.6rem;
+    font-family: "Helvetica Neue LT Std - LtCn";
+    color: #78645d;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin: 20px 0 5px 0;
+  }
+
+  &__button {
+    font-family: 'Helvetica Neue LT Std - Th';
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #fd926d;
+    border: none;
+    padding: 17px 45px 17px 20px;
+    border-bottom: 3px solid #dd6b44;
+    border-top: 3px solid #fd926d;
+    position: relative;
+    margin: 0 auto;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 20px;
+      border-top: 3px solid transparent;
+      border-left: 4px solid #ffffff;
+      border-bottom: 3px solid transparent;
+    }
+
+    &:focus {
+      border-top: 2px solid darken(#fd926d, 5);
+      border-bottom: 4px solid #fd926d;
+    }
+
+  }
+
+}

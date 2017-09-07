@@ -1,0 +1,125 @@
+.userBar {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+
+  &__container {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 970px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inputs {
+    display: flex;
+  }
+
+  &__selected {
+    position: relative;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    height: 100%;
+    padding-right: 30px;
+    padding-left: 15px;
+    appearance: none;
+    border-bottom: none;
+    border-top: none;
+    background-color: transparent;
+    border-right: solid 1px #444444;
+    border-left: solid 1px #444444;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-top: solid 4px #c1c1c1;
+      border-right: solid 4px transparent;
+      border-left: solid 4px transparent;
+      right: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+  }
+
+  &__options {
+    background-color: #000000;
+    position: absolute;
+    border-right: solid 1px #444444;
+    border-left: solid 1px #444444;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__option {
+    color: #ffffff;
+    cursor: pointer;
+    padding: 3px 30px 3px 15px;
+    width: 100%;
+    font-size: 1.1rem;
+    display: block;
+    background-color: #000000;
+    border: none;
+    border-bottom: solid 1px #444444;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    background: url("/assets/user.png") no-repeat 13px center;
+    padding: 0 15px 0 40px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__search {
+    color: inherit;
+    border: none;
+    border-left: solid 1px #444444;
+    background-color: transparent;
+    padding-left: 6px;
+  }
+
+  &__label {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+  }
+
+  &__submit {
+    height: 100%;
+    padding: 0 9px 0 9px;
+    background-color: transparent;
+    border: none;
+    border-right: solid 1px #444444;
+    border-left: solid 1px #444444;
+    cursor: pointer;
+  }
+
+}

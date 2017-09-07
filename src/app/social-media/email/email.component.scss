@@ -1,0 +1,71 @@
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-size: 1.2rem;
+    color: #6b6b6b;
+    margin-right: 8px;
+  }
+
+  &__label {
+    position: absolute;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+  }
+
+  &__input {
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 6px 0 6px 9px;
+  }
+
+  &__button {
+    color: transparent;
+    font-size: 0;
+    background-color: #fd926d;
+    width: 11px;
+    height: 8px;
+    box-sizing: content-box;
+    border: none;
+    padding: 8px;
+    border-bottom: 3px solid #dd6b44;
+    border-top: 3px solid #fd926d;
+    position: relative;
+    margin: 0 auto;
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      background-color: #ffffff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:before {
+      height: 3px;
+      width: 11px;
+    }
+
+    &:after {
+      height: 11px;
+      width: 3px;
+    }
+
+    &:focus {
+      border-top: 2px solid darken(#fd926d, 5);
+      border-bottom: 4px solid #fd926d;
+    }
+
+  }
+
+}

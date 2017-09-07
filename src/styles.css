@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face
+{
+  font-family: 'Luxury Royale JF';
+  src: url('./font/Luxury Royale JF.ttf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - HvCn';
+  src: url('./font/HelveticaNeueLTStd-HvCn.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - LtCn';
+  src: url('./font/HelveticaNeueLTStd-LtCn.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - Th';
+  src: url('./font/HelveticaNeueLTStd-Th.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - BdCn';
+  src: url('./font/HelveticaNeueLTStd-BdCn.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - LtIt';
+  src: url('./font/HelveticaNeueLTStd-LtIt.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - UltLtCn';
+  src: url('./font/HelveticaNeueLTStd-UltLtCn.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - Cn';
+  src: url('./font/HelveticaNeueLTStd-Cn.otf');
+}
+
+@font-face
+{
+  font-family: 'Helvetica Neue LT Std - Lt';
+  src: url('./font/HelveticaNeueLTStd-Lt.otf');
+}
+
+@font-face
+{
+  font-family: 'Bello';
+  src: url('./font/Bello.ttf');
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?99771132');
+  src: url('./font/fontello.eot?99771132#iefix') format('embedded-opentype'),
+  url('./font/fontello.woff?99771132') format('woff'),
+  url('./font/fontello.ttf?99771132') format('truetype'),
+  url('./font/fontello.svg?99771132#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-vimeo:before { content: '\f306'; } /* '' */
+.icon-gplus:before { content: '\f30f'; } /* '' */
+.icon-pinterest-circled:before { content: '\f313'; } /* '' */
+.icon-tumblr:before { content: '\f315'; } /* '' */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}

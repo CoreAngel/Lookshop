@@ -1,0 +1,29 @@
+.navBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0 20px;
+
+  &__container {
+    width: 100%;
+    max-width: 970px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__h1 {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+}

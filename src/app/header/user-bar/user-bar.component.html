@@ -1,0 +1,19 @@
+<div class="userBar">
+  <div class="userBar__container">
+    <div class="userBar__number">custom care: 888-23-4567</div>
+    <div class="userBar__inputs">
+      <div class="userBar__select">
+        <button (click)="toogleCurency()" id="userBar__selected" class="userBar__selected">{{ this.HeaderService.currentCurency }}</button>
+        <div id="userBar__options" class="userBar__options">
+          <button (click)="setCurrency($event)" *ngFor="let curr of currencys" class="userBar__option">{{ curr }}</button>
+        </div>
+      </div>
+      <div class="userBar__account">My account</div>
+      <form action="" class="userBar__form">
+        <label for="userBar__search" class="userBar__label">Wyszukiwarka</label>
+        <input id="userBar__search" type="text" placeholder="Szukaj..." class="userBar__search">
+        <button type="submit" class="userBar__submit"><img src="/assets/searchIcon.png" alt="Search Icon"></button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+.tile {
+  width: 100%;
+  height: 100%;
+  background: url("/assets/LayerTile1.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__container {
+    text-align: center;
+    margin-right: 45px;
+  }
+
+  &__first-text {
+    font-family: "Helvetica Neue LT Std - BdCn";
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    color: #414141;
+    margin-bottom: -15px;
+  }
+
+  &__secound-text {
+    font-family: "Helvetica Neue LT Std - LtCn";
+    font-size: 7.4rem;
+    color: #414141;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    height: 100%;
+    overflow-x: hidden;
+    margin: -10px 0 -15px 0;
+  }
+
+  &__end-char {
+    font-family: "Helvetica Neue LT Std - LtIt";
+    color: #ffffff;
+    display: inline-block;
+    font-size: 2.2rem;
+    padding: 3px 9px 3px 9px;
+    border-radius: 100%;
+    background-color: #414141;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 500px;
+      background-color: #414141;
+      top: 50%;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: 5px;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: 5px;
+    }
+
+  }
+
+  &__third-text {
+    font-family: "Helvetica Neue LT Std - BdCn";
+    font-size: 8.3rem;
+    color: #4fafa0;
+    text-transform: uppercase;
+  }
+
+}
