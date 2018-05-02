@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductsSliderComponent } from './products-slider/products-slider.component';
+import { ClearanceComponent } from './clearance/clearance.component';
 import { ProductCardModule } from './../product-card/product-card.module';
 
 @NgModule({
@@ -8,11 +8,7 @@ import { ProductCardModule } from './../product-card/product-card.module';
     CommonModule,
     ProductCardModule
   ],
-  declarations: [
-    ProductsSliderComponent
-  ],
-  exports: [
-    ProductsSliderComponent
-  ]
+  declarations: [ClearanceComponent],
+  exports: [ClearanceComponent]
 })
-export class ProductsSliderModule { }
+export class ClearanceModule { }

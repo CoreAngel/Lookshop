@@ -6,3 +6,4 @@ interface NodeModule {
 declare var jquery:any;
 declare var $ :any;
 declare var Slick:any;
+declare var owlCarousel:any;

@@ -21,11 +21,14 @@
       "styles": [
         "css/slick.css",
         "css/slick-theme.css",
+        "css/owl-carousel.css",
+        "css/owl-theme-default.css",
         "styles.css"
       ],
       "scripts": [
         "js/jquery-3.2.1.min.js",
-        "js/slick.min.js"
+        "js/slick.min.js",
+        "js/owl.carousel.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

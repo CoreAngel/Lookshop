@@ -18,7 +18,7 @@ export class TopSliderComponent implements OnInit {
       slidesToShow: 1,
       autoplay: true,
       autoplaySpeed: 5000,
-      useTransform: false,
+      //useTransform: false,
       dotsClass: 'top-slider__dots',
       zIndex: 1,
       nextArrow: $("#top-slider__next"),

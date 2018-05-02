@@ -1,0 +1,109 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }
+
+
+
+.navigation__button {
+  font-size: 0;
+  color: transparent;
+  height: 100%;
+  width: 50px;
+  border: none;
+  transition: 200ms;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.navigation__buttons {
+   height: 100%;
+   display: flex;
+ }
+
+.navigation__button--prev {
+  background-color: #f2f2f2;
+}
+
+.navigation__button--prev:before {
+   content: '';
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border-top: 1px solid #979797;
+   border-left: 1px solid #979797;
+   top: 50%;
+   left: 50%;
+   transform: translate(-20%, -50%) rotate(-45deg);
+ }
+
+.navigation__button--prev:hover, .navigation__button--prev:focus {
+  background-color: #d9d8d8;
+}
+
+.navigation__button--next {
+  background-color: #fd926d;
+}
+
+.navigation__button--next:before {
+   content: '';
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border-top: 1px solid #fff;
+   border-right: 1px solid #fff;
+   top: 50%;
+   left: 50%;
+   transform: translate(-70%, -50%) rotate(45deg);
+}
+
+.navigation__button--next:hover, .navigation__button--next:focus {
+  background-color: #fc6c3b;
+}

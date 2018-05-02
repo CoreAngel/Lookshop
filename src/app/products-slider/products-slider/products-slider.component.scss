@@ -13,6 +13,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     list-style: none;
+    display: flex;
   }
 
   &__item {
@@ -22,7 +23,7 @@
   &__link {
     text-decoration: none;
     display: block;
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 15px 15px;
     transition: 200ms;
     color: #555555;
 
@@ -98,4 +99,11 @@
 
   }
 
+}
+
+.slider {
+  display: flex;
+  background-color: #fd926d;
+  touch-action: manipulation;
+  justify-content: center;
 }
