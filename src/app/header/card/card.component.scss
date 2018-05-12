@@ -1,3 +1,5 @@
+@import "~scss/mixins.scss";
+
 .card {
   width: 214px;
   color: #949393;
@@ -9,6 +11,14 @@
   margin-left: 10px;
   z-index: 2;
 
+  @include respond-to(450px) {
+    width: 100%;
+    justify-self: stretch;
+    margin: 0;
+    padding: 0;
+    transform: translateY(0%);
+  }
+
   &__button {
     background-color: transparent;
     font-size: 1.2rem;
@@ -16,6 +26,7 @@
     border: none;
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
     text-align: left;
     transition: 150ms;
 
@@ -40,6 +51,11 @@
       top: 50%;
       transform: translateY(-50%);
       pointer-events: none;
+
+      @include respond-to(450px) {
+        top: 20px;
+      }
+
     }
 
   }
@@ -62,6 +78,11 @@
     border-right: solid 1px #949393;
     border-bottom: solid 1px #949393;
     left: -1px;
+
+    @include respond-to(450px) {
+      position: relative;
+    }
+
   }
 
   &__items {

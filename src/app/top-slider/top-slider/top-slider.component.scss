@@ -1,7 +1,13 @@
+@import "~scss/mixins.scss";
+
 .top-slider {
   z-index: 1;
   margin-bottom: 75px;
   position: relative;
+
+  @include respond-to(600px) {
+    display: none;
+  }
 
   &__button {
     position: absolute;

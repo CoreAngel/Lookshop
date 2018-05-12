@@ -1,0 +1,18 @@
+$break-small: 640px;
+$break-medium: 768px;
+$break-pkt: 970px;
+
+@mixin respond-to($media) {
+  @if $media == medium-sc {
+    @media only screen and (max-width: $break-medium) { @content; }
+  }
+  @else if $media == small-sc {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $media == break-pkt {
+    @media only screen and (max-width: $break-pkt ) { @content; }
+  }
+  @else {
+    @media only screen and (max-width: $media) { @content; }
+  }
+}
